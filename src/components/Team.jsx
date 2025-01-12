@@ -1,27 +1,30 @@
 import React from 'react';
+import pfp4 from "../assets/photos/pfp4.png";
+import pfp5 from "../assets/photos/pfp5.png";
+import pfp6 from "../assets/photos/pfp6.png";
 
-const Team = ({tabs, sectionRefs}) => {
+const Team = ({ tabs, sectionRefs }) => {
   const members = [
     {
       name: 'John Smith',
-      designation: 'Designation here',
+      designation: 'Software Engineer',
       description:
-        'Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet nec neque sed pellentesque viverra.',
-      image: 'https://www.georgetown.edu/wp-content/uploads/2022/02/Jkramerheadshot-scaled-e1645036825432-1050x1050-c-default.jpg',
+        'John is a dedicated software engineer with 5 years of experience in full-stack development. He specializes in building scalable web applications and enjoys solving challenging technical problems.',
+      image: pfp4,
     },
     {
       name: 'Elina Williams',
-      designation: 'Designation here',
+      designation: 'Product Manager',
       description:
-        'Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet nec neque sed pellentesque viverra.',
-      image: 'https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_1_1200x1200/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=1-9sfjwH',
+        'Elina is a results-driven product manager with expertise in creating user-centered designs and managing cross-functional teams. She has successfully launched several high-impact projects.',
+      image: pfp5,
     },
     {
-      name: 'John Smith',
-      designation: 'Designation here',
+      name: 'David Lee',
+      designation: 'UI/UX Designer',
       description:
-        'Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet nec neque sed pellentesque viverra.',
-      image: 'https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg',
+        'David is a creative UI/UX designer with a passion for crafting intuitive and visually stunning user experiences. He has a keen eye for detail and a talent for turning ideas into reality.',
+      image: pfp6,
     },
   ];
 
@@ -29,19 +32,19 @@ const Team = ({tabs, sectionRefs}) => {
     <div key={tabs.Team} ref={sectionRefs.Team} className="bg-white mx-auto p-6 rounded shadow-lg">
       <h2 className="text-2xl font-semibold mb-4">Team</h2>
       <p className="text-gray-600 mb-6">
-        Lorem ipsum dolor sit amet consectetur. Id consequat adipiscing arcu nibh. Eget mattis in mi integer sit egestas. Proin tempor id pretium quam. Facilisis purus convallis quam augue.
+        Meet the talented individuals who drive our success. Our team consists of skilled professionals dedicated to delivering excellence.
       </p>
       <div className="space-y-4">
         {members.map((member, index) => (
           <div key={index} className="flex flex-col md:flex-row items-center justify-center gap-4 p-4 border rounded-lg shadow-sm bg-blue-50">
-            <div>
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-24 h-24 md:w-40 rounded object-cover"
-            />
-            <h3 className="text-center text-sm font-semibold">{member.name}</h3>
-            <p className="text-xs text-center text-gray-500 mb-2">{member.designation}</p>
+            <div className="flex flex-col items-center">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-24 h-24 md:w-20 md:h-20 rounded object-cover"
+              />
+              <h3 className="text-center text-sm font-semibold mt-2">{member.name}</h3>
+              <p className="text-xs text-center text-gray-500 mb-2">{member.designation}</p>
             </div>
             <div>
               <p className="text-sm text-gray-600 leading-relaxed">
