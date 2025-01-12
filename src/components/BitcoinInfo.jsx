@@ -3,14 +3,13 @@ import useCoinData from "../hooks/useCoinData";
 // import DOMPurify from "dompurify";
 
 const BitcoinInfo = ({tabs, sectionRefs}) => {
-  const { data,detailedData, loading, error } = useCoinData("bitcoin");
+  const { data,detailedData, loading, error } = useCoinData("ethereum");
   // const sanitizedHTML = DOMPurify.sanitize(detailedData);
   console.log(detailedData)
   return (
     <div key={tabs.NewInsights} ref={sectionRefs.NewInsights}  className="p-6 bg-white border border-gray-200 rounded-lg shadow-md space-y-6">
-      {/* About Bitcoin Section */}
       <div>
-        <h2 className="text-xl font-semibold mb-2">About Bitcoin</h2>
+        <h2 className="text-xl font-semibold mb-2">About ethereum</h2>
         <div
           dangerouslySetInnerHTML={{ __html: detailedData }}
         ></div>
@@ -36,10 +35,8 @@ const BitcoinInfo = ({tabs, sectionRefs}) => {
           magna eget eros donec cursus nunc.
         </p>
       </div>
-
-{/* Already Holding Bitcoin Section */}
 <div>
-  <h3 className="text-lg text-white font-semibold mb-4">Already Holding Bitcoin?</h3>
+  <h3 className="text-lg font-semibold mb-4">Already Holding ethereum?</h3>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
     {/* Calculate Profits */}
     <div className="p-5 text-white  bg-gradient-to-r from-green-400 to-cyan-600 rounded-lg flex items-center space-x-4 transition duration-1000 hover:from-green-400 hover:to-blue-600">

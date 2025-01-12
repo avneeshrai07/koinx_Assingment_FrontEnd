@@ -4,7 +4,7 @@ import FundamentalsComponent from "./FundamentalsComponent";
 import useCoinData from "../hooks/useCoinData";
 
 const PerformanceDashboard = ({tabs, sectionRefs}) => {
-  const { data, loading, error } = useCoinData("bitcoin");
+  const { data, loading, error } = useCoinData("ethereum");
 
   if (loading) {
     return <div className="text-center mt-10">Loading...</div>;
@@ -24,7 +24,7 @@ const PerformanceDashboard = ({tabs, sectionRefs}) => {
   };
 
   const fundamentalsData = {
-    "Bitcoin Price": data.current_price.toLocaleString("en-US", { style: "currency", currency: "USD" }),
+    "Ethereum Price": data.current_price.toLocaleString("en-US", { style: "currency", currency: "USD" }),
     "Market Cap": data.market_cap.toLocaleString("en-US", { style: "currency", currency: "USD" }),
     "24h Low / 24h High": `${data.low_24h.toLocaleString()} / ${data.high_24h.toLocaleString()}`,
     "7d Low / 7d High": "N/A", // Not available in API (replace if needed)

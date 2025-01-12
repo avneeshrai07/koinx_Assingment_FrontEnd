@@ -13,9 +13,9 @@ function TradingViewWidget() {
       script.innerHTML = `
         {
           "autosize": true,
-          "symbol": "BITSTAMP:BTCUSD",
+          "symbol": "COINBASE:ETHUSD",
           "timezone": "Etc/UTC",
-          "theme": "light",
+          "theme": "DARK",
           "style": "3",
           "locale": "en",
           "range": "1D",

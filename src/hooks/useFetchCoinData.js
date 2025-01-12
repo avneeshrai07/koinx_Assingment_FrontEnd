@@ -9,7 +9,7 @@ const useFetchCoinData = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await fetch("https://api.coingecko.com/api/v3/simple/price?x_cg_demo_api_key=CG-agp1scJQqR3JsindWUSS9ZF4&vs_currencies=usd,inr&ids=bitcoin&include_24hr_change=true&precision=2");
+        const response = await fetch("https://api.coingecko.com/api/v3/simple/price?x_cg_demo_api_key=CG-agp1scJQqR3JsindWUSS9ZF4&vs_currencies=usd,inr&ids=ethereum&include_24hr_change=true&precision=2");
         if (!response.ok) {
           throw new Error(`Error: ${response.status}`);
         }

@@ -1,4 +1,7 @@
 import { useRef } from "react";
+import pfp1 from "../assets/photos/pfp1.png";
+import pfp2 from "../assets/photos/pfp2.png";
+import pfp3 from "../assets/photos/pfp3.png";
 import { FaRegUserCircle } from "react-icons/fa";
 
 const SentimentComponent = ({tabs, sectionRefs }) => {
@@ -12,45 +15,45 @@ const SentimentComponent = ({tabs, sectionRefs }) => {
         <h3 className="text-lg font-medium mb-4">Key Events</h3>
         <div className="md:flex gap-4 overflow-x-auto">
           {/* Blue Card */}
-          <div className="flex items-start bg-blue-100 p-4 rounded-lg md:min-w-[40vw] my-2">
-            <div className="flex items-center justify-center w-8 h-8 bg-blue-500 text-white font-bold rounded-full mr-3">
-              <FaRegUserCircle className="h-8 w-8"/>
+          <div className="flex items-start bg-custom-blue p-4 rounded-lg md:min-w-[40vw] my-2">
+            <div className="flex items-center justify-center w-20 h-10 text-white font-bold mr-3">
+            <img src={pfp1} alt="Profile" className="w-10 h-10 object-cover" />
             </div>
             <div>
-              <h4 className="font-medium text-gray-900 mb-2">
+              <h4 className="font-medium text-white mb-2">
                 Ethereum 2.0 Launch
               </h4>
-              <p className="text-gray-600 text-sm">
+              <p className="text-white text-sm">
                 Ethereum's transition to Proof-of-Stake (PoS) with the launch of Ethereum 2.0 has generated significant interest. This move aims to make Ethereum more scalable, secure, and sustainable. The Ethereum 2.0 upgrade is expected to significantly reduce energy consumption and enhance the overall network performance.
               </p>
             </div>
           </div>
 
           {/* Green Card */}
-          <div className="flex items-start bg-green-100 p-4 rounded-lg md:min-w-[40vw] my-2">
-            <div className="flex items-center justify-center w-8 h-8 bg-green-500 text-white font-bold rounded-full mr-3">
-              <FaRegUserCircle className="h-8 w-8"/>
+          <div className="flex items-start bg-custom-green-200 p-4 rounded-lg md:min-w-[40vw] my-2">
+            <div className="flex items-center justify-center w-20 h-10  text-white font-bold  mr-3">
+            <img src={pfp2} alt="Profile" className="w-10 h-10 object-cover" />
             </div>
             <div>
-              <h4 className="font-medium text-gray-900 mb-2">
+              <h4 className="font-medium text-white mb-2">
                 Institutional Adoption of Ethereum
               </h4>
-              <p className="text-gray-600 text-sm">
+              <p className="text-white text-sm">
                 Institutional interest in Ethereum has surged in recent months. Major financial institutions and corporations are integrating Ethereum's blockchain technology for various applications, including decentralized finance (DeFi), smart contracts, and NFTs. This adoption could drive the price and utility of Ethereum to new heights.
               </p>
             </div>
           </div>
 
           {/* Green Card */}
-          <div className="flex items-start bg-green-100 p-4 rounded-lg min-w-[40vw] my-2">
-            <div className="flex items-center justify-center w-8 h-8 bg-green-500 text-white font-bold rounded-full mr-3">
-              <FaRegUserCircle className="h-8 w-8"/>
+          <div className="flex items-start bg-custom-black-200 p-4 rounded-lg min-w-[40vw] my-2">
+            <div className="flex items-center justify-center w-20 h-10 text-white font-bold  mr-3">
+            <img src={pfp3} alt="Profile" className="w-10 h-10 object-cover" />
             </div>
             <div>
-              <h4 className="font-medium text-gray-900 mb-2">
+              <h4 className="font-medium text-white mb-2">
                 Ethereum's Role in DeFi Growth
               </h4>
-              <p className="text-gray-600 text-sm">
+              <p className="text-white text-sm">
                 Ethereum remains the backbone of the decentralized finance (DeFi) ecosystem. With smart contracts enabling financial applications without intermediaries, Ethereum has become the preferred blockchain for DeFi projects. The rise of decentralized exchanges (DEXs), lending protocols, and yield farming platforms continues to fuel the growth of Ethereum's ecosystem.
               </p>
             </div>

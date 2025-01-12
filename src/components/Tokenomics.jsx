@@ -9,27 +9,28 @@ const Tokenomics = ({tabs, sectionRefs}) => {
         {/* Chart */}
         <div
           className="w-36 h-36 bg-gradient-to-tr from-blue-500 to-yellow-400 rounded-full"
-          style={{ background: 'conic-gradient(#007bff 0% 80%, #ffc107 80% 100%)' }}
+          style={{ background: 'conic-gradient(coral 78% 75%, turquoise 78% 100%)' }}
         ></div>
 
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-2 text-sm">
             <div className="w-4 h-4 bg-blue-500 rounded"></div>
-            Crowdsale investors: 80%
+            Crowdsale investors: 78%
           </div>
           <div className="flex items-center gap-2 text-sm">
             <div className="w-4 h-4 bg-yellow-400 rounded"></div>
-            Foundation: 20%
+            Foundation: 22%
           </div>
         </div>
       </div>
 
       {/* Description */}
       <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-        Lorem ipsum dolor sit amet consectetur. Cras aliquet tristique ornare vestibulum nunc dignissim vel consequat. 
-        Leo etiam nascetur bibendum amet enim sit eget leo amet. At metus orci augue fusce eleifend lectus eu fusce adipiscing. 
-        Volutpat ultrices nibh sodales massa habitasse urna felis augue.
-      </p>
+  <strong>Tokenomics - Initial Distribution</strong><br />
+  The tokenomics structure of the project outlines the distribution of tokens across various stakeholders. This ensures transparency and equity for all parties involved.<br />
+  <span className="block mt-2">Crowdsale investors: <span className="font-semibold">78%</span></span>
+  <span className="block mt-1">Foundation: <span className="font-semibold">22%</span></span>
+</p>
     </div>
   );
 };
