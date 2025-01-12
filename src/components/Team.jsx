@@ -29,7 +29,7 @@ const Team = ({ tabs, sectionRefs }) => {
   ];
 
   return (
-    <div key={tabs.Team} ref={sectionRefs.Team} className="bg-custom-black-200 mx-auto p-6 rounded shadow-lg">
+    <div key={tabs.Team} ref={sectionRefs.Team} className="bg-custom-black-300 mx-auto p-6 rounded shadow-lg">
       <h2 className="text-2xl font-semibold text-white mb-4">Team</h2>
       <p className="text-white mb-6">
         Meet the talented individuals who drive our success. Our team consists of skilled professionals dedicated to delivering excellence.

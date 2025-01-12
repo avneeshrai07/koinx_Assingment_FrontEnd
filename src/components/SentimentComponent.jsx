@@ -7,15 +7,15 @@ import { FaRegUserCircle } from "react-icons/fa";
 const SentimentComponent = ({tabs, sectionRefs }) => {
 
   return (
-    <div key={tabs.Sentiments} ref={sectionRefs.Sentiments} className="p-6 bg-white my-5 rounded shadow-lg font-sans">
-      <h2 className="text-xl font-semibold mb-4">Sentiment on Ethereum</h2>
+    <div key={tabs.Sentiments} ref={sectionRefs.Sentiments} className="p-6 bg-custom-black-300 my-5 rounded shadow-lg font-sans">
+      <h2 className="text-xl font-semibold mb-4 text-white">Sentiment on Ethereum</h2>
 
       {/* Key Events Section */}
       <div className="mb-8">
-        <h3 className="text-lg font-medium mb-4">Key Events</h3>
+        <h3 className="text-lg font-medium mb-4  text-white">Key Events</h3>
         <div className="md:flex gap-4 overflow-x-auto">
           {/* Blue Card */}
-          <div className="flex items-start bg-custom-blue p-4 rounded-lg md:min-w-[40vw] my-2">
+          <div className="flex items-start bg-gradient-to-r from-custom-black-100 to-custom-white p-4 rounded-lg md:min-w-[40vw] my-2">
             <div className="flex items-center justify-center w-20 h-10 text-white font-bold mr-3">
             <img src={pfp1} alt="Profile" className="w-10 h-10 object-cover" />
             </div>
@@ -30,7 +30,7 @@ const SentimentComponent = ({tabs, sectionRefs }) => {
           </div>
 
           {/* Green Card */}
-          <div className="flex items-start bg-custom-green-200 p-4 rounded-lg md:min-w-[40vw] my-2">
+          <div className="flex items-start bg-gradient-to-r from-custom-black-100 to-custom-white p-4 rounded-lg md:min-w-[40vw] my-2">
             <div className="flex items-center justify-center w-20 h-10  text-white font-bold  mr-3">
             <img src={pfp2} alt="Profile" className="w-10 h-10 object-cover" />
             </div>
@@ -45,7 +45,7 @@ const SentimentComponent = ({tabs, sectionRefs }) => {
           </div>
 
           {/* Green Card */}
-          <div className="flex items-start bg-custom-black-200 p-4 rounded-lg min-w-[40vw] my-2">
+          <div className="flex items-start bg-gradient-to-r from-custom-black-100 to-custom-white p-4 rounded-lg min-w-[40vw] my-2">
             <div className="flex items-center justify-center w-20 h-10 text-white font-bold  mr-3">
             <img src={pfp3} alt="Profile" className="w-10 h-10 object-cover" />
             </div>
@@ -63,8 +63,8 @@ const SentimentComponent = ({tabs, sectionRefs }) => {
 
       {/* Analyst Estimates Section */}
       <div className="">
-        <h3 className="text-lg font-medium mb-4">Analyst Estimates</h3>
-        <div className="flex items-center gap-6">
+        <h3 className="text-lg font-medium mb-4  text-white">Analyst Estimates</h3>
+        <div className="flex items-center gap-6  text-white">
           {/* Circle Chart */}
           <div className="relative flex items-center justify-center w-20 h-20 bg-green-100 text-green-600 font-semibold rounded-full">
             85%
@@ -73,7 +73,7 @@ const SentimentComponent = ({tabs, sectionRefs }) => {
           {/* Bars */}
           <div className="flex-1">
             {/* Buy Bar */}
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4  text-white">
               <span className="w-16 text-sm font-medium">Buy</span>
               <div className="flex-1 bg-gray-200 h-2 rounded-lg overflow-hidden">
                 <div className="bg-green h-2" style={{ width: '85%' }}></div>
@@ -81,7 +81,7 @@ const SentimentComponent = ({tabs, sectionRefs }) => {
             </div>
 
             {/* Hold Bar */}
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4  text-white">
               <span className="w-16 text-sm font-medium">Hold</span>
               <div className="flex-1 bg-gray-200 h-2 rounded-lg overflow-hidden">
                 <div className="bg-yellow h-2" style={{ width: '10%' }}></div>
@@ -89,7 +89,7 @@ const SentimentComponent = ({tabs, sectionRefs }) => {
             </div>
 
             {/* Sell Bar */}
-            <div className="flex items-center">
+            <div className="flex items-center  text-white">
               <span className="w-16 text-sm font-medium">Sell</span>
               <div className="flex-1 bg-gray-200 h-2 rounded-lg overflow-hidden">
                 <div className="bg-red h-2" style={{ width: '5%' }}></div>
