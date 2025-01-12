@@ -29,9 +29,9 @@ const Team = ({ tabs, sectionRefs }) => {
   ];
 
   return (
-    <div key={tabs.Team} ref={sectionRefs.Team} className="bg-white mx-auto p-6 rounded shadow-lg">
-      <h2 className="text-2xl font-semibold mb-4">Team</h2>
-      <p className="text-gray-600 mb-6">
+    <div key={tabs.Team} ref={sectionRefs.Team} className="bg-custom-black-200 mx-auto p-6 rounded shadow-lg">
+      <h2 className="text-2xl font-semibold text-white mb-4">Team</h2>
+      <p className="text-white mb-6">
         Meet the talented individuals who drive our success. Our team consists of skilled professionals dedicated to delivering excellence.
       </p>
       <div className="space-y-4">
@@ -43,11 +43,11 @@ const Team = ({ tabs, sectionRefs }) => {
                 alt={member.name}
                 className="w-24 h-24 md:w-20 md:h-20 rounded object-cover"
               />
-              <h3 className="text-center text-sm font-semibold mt-2">{member.name}</h3>
-              <p className="text-xs text-center text-gray-500 mb-2">{member.designation}</p>
+              <h3 className="text-center text-sm text-white font-semibold mt-2">{member.name}</h3>
+              <p className="text-xs text-center text-white mb-2">{member.designation}</p>
             </div>
             <div>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm text-white leading-relaxed">
                 {member.description}
               </p>
             </div>
