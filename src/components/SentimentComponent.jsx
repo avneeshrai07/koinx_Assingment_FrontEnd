@@ -76,7 +76,7 @@ const SentimentComponent = ({tabs, sectionRefs }) => {
             <div className="flex items-center mb-4">
               <span className="w-16 text-sm font-medium">Buy</span>
               <div className="flex-1 bg-gray-200 h-2 rounded-lg overflow-hidden">
-                <div className="bg-green-500 h-2" style={{ width: '85%' }}></div>
+                <div className="bg-green h-2" style={{ width: '85%' }}></div>
               </div>
             </div>
 
@@ -84,7 +84,7 @@ const SentimentComponent = ({tabs, sectionRefs }) => {
             <div className="flex items-center mb-4">
               <span className="w-16 text-sm font-medium">Hold</span>
               <div className="flex-1 bg-gray-200 h-2 rounded-lg overflow-hidden">
-                <div className="bg-yellow-400 h-2" style={{ width: '10%' }}></div>
+                <div className="bg-yellow h-2" style={{ width: '10%' }}></div>
               </div>
             </div>
 
@@ -92,7 +92,7 @@ const SentimentComponent = ({tabs, sectionRefs }) => {
             <div className="flex items-center">
               <span className="w-16 text-sm font-medium">Sell</span>
               <div className="flex-1 bg-gray-200 h-2 rounded-lg overflow-hidden">
-                <div className="bg-red-500 h-2" style={{ width: '5%' }}></div>
+                <div className="bg-red h-2" style={{ width: '5%' }}></div>
               </div>
             </div>
           </div>
