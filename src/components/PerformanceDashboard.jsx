@@ -7,11 +7,11 @@ const PerformanceDashboard = ({tabs, sectionRefs}) => {
   const { data, loading, error } = useCoinData("ethereum");
 
   if (loading) {
-    return <div className="text-center mt-10">Loading...</div>;
+    return <div className="text-center mt-10 ">Loading...</div>;
   }
 
   if (error) {
-    return <div className="text-center mt-10 text-red-500">Error: {error}</div>;
+    return <div className="text-center mt-10 text-red">Error: {error}</div>;
   }
 
   // Map API data to the required formats for components
@@ -37,7 +37,7 @@ const PerformanceDashboard = ({tabs, sectionRefs}) => {
   };
 
   return (
-    <div className="bg-gray-100">
+    <div className="text-white">
       <PerformanceComponent tabs={tabs} sectionRefs={sectionRefs} performanceData={performanceData} />
       <FundamentalsComponent tabs={tabs} sectionRefs={sectionRefs} fundamentalsData={fundamentalsData} />
     </div>
